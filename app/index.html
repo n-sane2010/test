@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Floop</title>
+    <link rel="stylesheet" href="dest/styles/main.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="dest/script/my_scripts.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<nav>
+				<div class="logo"><a href="">
+					<h1>Floop</h1>
+					<img src="./img/logo.png" alt="Floop">
+					</a>
+				</div>
+				<div class="input">
+					<input type="search" placeholder="search">
+					<button><img src="./img/search-icon.svg" alt=""></button>
+				</div>
+				<div class="link_group">
+					<ul>
+						<li><a class="show_popup" rel="reg_form" href="#"><img src="./img/profile.svg" alt=""></a></li>
+						<li><a href="#"><img src="./img/wishlist.svg" alt=""></a></li>
+						<li><a href="#"><img src="./img/cart.svg" alt=""></a></li>
+					</ul>
+				</div>
+                <div class="popup reg_form">
+                    <a class="close" href="#"><img src="./img/close.png" alt=""></a>
+                    <h2>Sing In</h2>
+                    <form method="post" action="">
+                        <label for="login">Login</label>
+                        <input type="text" name="login" />
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" />
+                        <input type="submit" value="Sing In" />	
+                    </form>
+                </div>
+			</nav>
+		</header>
+		<main>
+			<div id="content">
+				<section class="main-slider">
+					<div class="slide">
+                        <div class="slider">
+                            <div class="item">
+                                <img src="./img/slide1.jpg" alt="Первый слайд">
+                            </div>
+
+                            <a class="prev" onclick="minusSlide1()">&#10094;</a>
+                            <a class="next" onclick="plusSlide1()">&#10095;</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <ul class="all-product">
+                            <li class="item-p">
+                                <img src="./img/product1.png" alt="">
+                            </li>
+                            <li class="item-p">
+                                <img src="./img/product1.png" alt="">
+                            </li>
+                        </ul>
+                        
+                    </div>
+				</section>
+				<section class="shop">
+					<h5>SHOP BY CATEGORY</h5>
+					<ul class="all-items">
+						<li class="item">
+							<a href="">
+								<div class="img-holder">
+									<img src="./img/3-160x160 1.png" alt="">
+								</div>
+								<p>Dinig Tables</p>
+							</a>
+						</li>
+						<li class="item">
+							<a href="">
+								<div class="img-holder">
+									<img src="./img/4-160x160 1.png" alt="">
+								</div>
+								<p>Furniture</p>
+							</a>
+						</li>
+						<li class="item">
+							<a href="">
+								<div class="img-holder">
+									<img src="./img/5-160x160 1.png" alt="">
+								</div>
+								<p>Herbs</p>
+							</a>
+						</li>
+						<li class="item">
+							<a href="">
+								<div class="img-holder">
+									<img src="./img/4-160x160 2.png" alt="">
+								</div>
+								<p>Dinig Tables</p>
+							</a>
+						</li>
+						<li class="item">
+							<a href="">
+								<div class="img-holder">
+									<img src="./img/3-160x160 2.png" alt="">
+								</div>
+								<p>Sports</p>
+							</a>
+						</li>
+						<li class="item">
+							<a href="">
+								<div class="img-holder">
+									<img src="./img/2-160x160 1.png" alt="">
+								</div>
+								<p>Desctops</p>
+							</a>
+						</li>
+					</ul>
+				</section>
+				<section class="deals">
+					<h5>DEALS OF THE DAY</h5>
+					<ul class="all-items">
+						<li class="item">
+							<a href="">
+								<div class="img-holder"><img src="./img/31-728x800 1.png" alt=""></div>
+								<div class="rate">
+									<img src="./img/rateing.png" alt="">
+									<img src="./img/rateing.png" alt="">
+									<img src="./img/rateing.png" alt="">
+									<img src="./img/rateing.png" alt="">
+									<img src="./img/rateing.png" alt="">
+								</div>
+								<p class="name">Lorem ipsum dolor sit amet ...</p>
+								<div class="price-block">
+									<p class="price">$250.00</p>
+									<p class="discount">$609.00</p>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="">
+								<div class="img-holder"><img src="./img/11-728x800 1.png" alt=""></div>
+								<div class="rate">
+									<img src="./img/rateing.png" alt="">
+									<img src="./img/rateing.png" alt="">
+									<img src="./img/rateing.png" alt="">
+									<img src="./img/rateing.png" alt="">
+									<img src="./img/rateing.png" alt="">
+								</div>
+								<p class="name">Lorem ipsum dolor sit amet ...</p>
+								<div class="price-block">
+									<p class="price">$250.00</p>
+									<p class="discount"></p>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="">
+								<div class="img-holder"><img src="./img/31-728x800 1.png" alt=""></div>
+								<div class="rate">
+									<img src="./img/rateing.png" alt="">
+									<img src="./img/rateing.png" alt="">
+									<img src="./img/rateing.png" alt="">
+									<img src="./img/rateing.png" alt="">
+									<img src="./img/rateing.png" alt="">
+								</div>
+								<p class="name">Lorem ipsum dolor sit amet ...</p>
+								<div class="price-block">
+									<p class="price">$250.00</p>
+									<p class="discount"></p>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="">
+								<div class="img-holder"><img src="./img/31-728x800 1.png" alt=""></div>
+								<div class="rate">
+									<img src="./img/rateing.png" alt="">
+									<img src="./img/rateing.png" alt="">
+									<img src="./img/rateing.png" alt="">
+									<img src="./img/rateing.png" alt="">
+									<img src="./img/rateing.png" alt="">
+								</div>
+								<p class="name">Lorem ipsum dolor sit amet ...</p>
+								<div class="price-block">
+									<p class="price">$250.00</p>
+									<p class="discount"></p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</section>
+				<section class="news">
+					<h5>Latest News</h5>
+					<div class="all-items">
+						<div class="item">
+							<a href=""><img class="banner" src="./img/pexels-ivan-samkov-4240505 1.png" alt="">
+								<div class="date">
+									<p><time datetime="2021-03-01 19:00">01 Marc, 2021</time>.</p>
+								</div>
+								<div class="comments">
+									<p class="number"><span>1</span> Comments</p>
+									<h4>Lorem ipsum dolor sit amet, consectetur.</h4>
+									<p class="article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+								</div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="">
+								<img class="banner" src="./img/pexels-cottonbro-5077047 1.png" alt="">
+								<div class="date">
+									<p><time datetime="2021-03-01 19:00">01 Marc, 2021</time>.</p>
+								</div>
+								<div class="comments">
+									<p class="number"><span>1</span> Comments</p></p>
+									<h4>Lorem ipsum dolor sit amet, consectetur.</h4>
+									<p class="article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+								</div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="">
+								<img class="banner" src="./img/pexels-ivan-samkov-4240505 1.png" alt="">
+								<div class="date">
+									<p><time datetime="2021-03-01 19:00">01 Marc, 2021</time>.</p>
+								</div>
+								<div class="comments">
+									<p class="number"><span>1</span> Comments</p></p>
+									<h4>Lorem ipsum dolor sit amet, consectetur.</h4>
+									<p class="article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+
+	</div>
+</body>
+
+</html>
